@@ -1,0 +1,10 @@
+.wrapper {
+  background-image: url('./img/bg.jpg');
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.heading {
+  text-transform: uppercase;
+  color: #f55362;
+}
