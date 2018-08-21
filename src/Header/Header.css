@@ -2,6 +2,7 @@
   background-image: url('./img/bg.jpg');
   overflow: hidden;
   padding-bottom: 20px;
+<<<<<<< HEAD
   position: relative;
 }
 
@@ -18,6 +19,8 @@
   left: 0;
   background-color: rgba(0,0,0,0.7);
   z-index: 0;
+=======
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
 }
 
 .heading {

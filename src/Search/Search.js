@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component, createRef } from 'react'
 import s from './Search.css'
 
@@ -10,6 +11,14 @@ class Search extends Component {
 
   state = {
     searchPhrase: 'abc',
+=======
+import React, { Component } from 'react'
+import s from './Search.css'
+
+class Search extends Component {
+  state = {
+    searchPhrase: '',
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
     searchBy: 'title'
   }
 
@@ -26,13 +35,27 @@ class Search extends Component {
   }
 
   searchHandler = () => {
+<<<<<<< HEAD
     fetch(`http://api.tvmaze.com/search/shows?q=${this.searchRef.current.value}`)
       .then((res) => res.json())
+=======
+    fetch('http://api.tvmaze.com/search/shows?q=girls')
+      .then((res) => {
+        return res.json()
+      })
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
       .then((results) => {
         this.props.setResults(results)
       })
   }
 
+<<<<<<< HEAD
+=======
+  componentDidMount() {
+    this.searchHandler()
+  }
+
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
   render() {
     const { searchPhrase, searchBy } = this.state
 
@@ -46,7 +69,10 @@ class Search extends Component {
           placeholder='Enter search phrase..'
           value={searchPhrase}
           onChange={this.changeSearchPhrase}
+<<<<<<< HEAD
           ref={this.searchRef}
+=======
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
         />
 
         <div className={s.controlsWrapper}>

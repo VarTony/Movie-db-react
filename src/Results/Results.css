@@ -18,8 +18,13 @@ div.wrapper {
 
 .resultsWrapper > * {
   width: 32%;
+<<<<<<< HEAD
   margin-left: 2%;
   margin-bottom: 20px;
+=======
+  background-color: pink;
+  margin-left: 2%;
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
 }
 
 .resultsWrapper > *:nth-child(3n + 1) {

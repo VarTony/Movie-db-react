@@ -1,10 +1,16 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD
 import { Router, Route } from 'react-router-dom'
 
 import history from '../history'
 
 import SearchPage from '../_pages/SearchPage'
 import DetailsPage from '../_pages/DetailsPage'
+=======
+
+import Header from '../Header/Header'
+import Results from '../Results/Results'
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
 
 class App extends Component {
   state = {
@@ -21,6 +27,7 @@ class App extends Component {
     const { results } = this.state
 
     return (
+<<<<<<< HEAD
       <Router history={history}>
         <div>
           {/* Search Page */}
@@ -37,6 +44,12 @@ class App extends Component {
           />
         </div>
       </Router>
+=======
+      <div>
+        <Header setResults={this.setResults} />
+        <Results results={results} />
+      </div>
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
     )
   }
 }

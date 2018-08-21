@@ -11,7 +11,11 @@ class Results extends Component {
         {results.length
           ? (
             <div className={s.resultsWrapper}>
+<<<<<<< HEAD
               {results.map((item) => <ResultsItem key={item.show.id} item={item} />)}
+=======
+              {results.map((item) => <ResultsItem item={item} />)}
+>>>>>>> faf940d18b8f611d14e6a2e7a80c9bcba48d345f
             </div>
           )
           : (
